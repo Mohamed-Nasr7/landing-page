@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet&display=swap');
+
+
+header, section{
+    overflow: hidden;
+}
+
+:root{
+    --Sniglet: 'Sniglet', cursive;
+    --Rubik: 'Rubik', sans-serif;
+    --Patua: 'Patua One', cursive;
+    --Lobster: 'Lobster', cursive;
+    --Acme: 'Acme', sans-serif;
+    --light-black: #2e2c2c;
+    --light-gray: rgba(255, 246, 246, 0.877);
+    --bggradient: linear-gradient(to bottom, #dd2476, #ff512f)
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* Header section */
+
+header{
+    background: var(--bggradient);
+    min-height: 100vh;
+    
+}
+
+
+
+/* NAV BAR */
+
+header a{
+    font-family: var(--Rubik);
+    /* font-size: .09em; */
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background: #fff;
+    min-width: 160px;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    background: #ddd;
+}
+
+header .nav-item{
+    padding: 0.9em;
+}
+
+header .nav-link{
+    position: relative;
+}
+
+header .nav-link:hover{
+    color: #fff;
+}
+
+header .nav-link:hover::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    margin-top: 5px;
+    width: 100%;
+    height: 2px;
+    background-color: #fff
+}
+
+.navbar-brand:hover{
+    color: whitesmoke;
+}
+
+nav.navbar{
+    z-index: 5;
+    
+}
+
+
+.fixed-nav{
+    position: fixed;
+    width: 100%;
+    background-color: #262626e5;
+    transition: all 0.5s ease;
+    box-shadow: 0 2px 10px rgba(80, 80, 80, 0.685);
+}
+
+
+
+
+
+/* HEADER */
+
+.hbody{
+    color: white;
+    margin-top: 5vmin;
+} 
+
+.img-fluid{
+    height: 70vh;
+}
+
+.header h6{
+    padding: 1vmin;
+    letter-spacing: 4px;
+}
+
+.header h1{
+    font-size: 8vmin;
+    font-weight: bold;
+    padding: 0.1em 0;
+}
+
+.header p{
+    padding: 1vmin 5vmin;
+}
+
+.header button{
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.fade{
+    opacity: 0;
+}
+
+
+
+/* About */
+
+.about{
+    padding: 20vmin 0;
+}
+
+.about img{
+    opacity: 0.8;
+    width: 80%;
+    border-radius: 0.2em;
+}
+
+.about .container {
+    position: relative;
+}
+
+
+.about .panel{
+    max-width: 80vmin;
+    margin: 20px auto;
+    background: white;
+    border-radius: 3px;
+    padding: 6vmin 6vmin;
+    box-shadow: 0 25px 42px rgba(0, 0, 0, 0.2);
+    font-family: var(--Rubik);
+    z-index: 1;
+}
+
+
+
+.about h1{
+    font-weight: bold;
+    padding: 0.4em;
+    font-size: 2em;
+}
+
+.about p{
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+/* Features */
+
+.cover{
+    width: 100%;
+    height: 55vh;
+    background: url('../img/pexels-photo-3740190.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+.cover .content{
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    padding-top: 19vmin
+}
+
+.cover .content h1{
+    font-family: var(--Patua);
+    font-size: 6vmin;
+    color: whitesmoke;
+}
+
+.cover .content p{
+    font-family: var(--Patua);
+    font-size: 3vmin;
+    color: #e5e5e5;
+}
+
+.numbers{
+    margin-top: -15vmin;
+    padding-bottom: 70px;
+}
+
+.numbers .rect{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    width: 17em;
+    height: 12em;
+    padding-top: 3.5vmin;
+    margin: 1rem;
+    border-radius: 0.5em;
+    box-shadow: 1px 2px 50px 0px rgba(255, 0, 0, 0.349);
+}
+
+.numbers .rect h1{
+    font-size: 5em;
+    color: tomato;
+}
+
+.numbers .rect p{
+    font-family: var(--Patua);
+}
+
+
+
+/* Purchase */
+
+.purchase h1 {
+    padding-bottom: 0.1em;
+    font-family: var(--Lobster);
+}
+
+.purchase p{
+    color: var(--light-black);
+    font-size: 3vmin;
+    padding-bottom: 10vmin;
+}
+
+.purchase .cards .card{
+    width: 22rem;
+    margin: 3vmin;
+}
+
+.cards div{
+    padding: 0;
+    margin: 0;
+}
+
+.cards .card-title{
+    background: rgba(208, 241, 241, 0.19);
+    padding: 1.4rem 2.5rem;
+    font-size: 3vmin;
+}
+
+.card .card-text{
+    padding: 2.5rem 3rem;
+    color: var(--light-black);
+}
+
+.card-body .pricing{
+    background: rgba(208, 241, 241, 0.1);
+    border-top-right-radius: 170px;
+    border-top-left-radius: 170px;
+}
+
+.card-body .pricing h1{
+    font-size: 10vmin;
+    padding: 1em 0.5em;
+}
+
+
+
+
+
+/* Platforms */
+
+.platforms{
+    min-height: 70vmin;
+    margin-top: 15vmin;
+    background: var(--bggradient);
+}
+
+.platforms h1{
+    padding: 2em 0 0.5em 0;
+    color: whitesmoke;
+    font-size: 6vmin;
+}
+
+.platforms p{
+    padding: 0.4em 4.4em 2em;
+    color: var(--light-gray);
+    font-size: 3vmin;
+}
+
+.platforms .desktop{
+    background: #fff;
+    width: 35vmin;
+    display: inline-block;
+    border-radius: 3em;
+    padding: 2vmin 4.5vmin;
+    margin: 1em;
+}
+
+.platforms .desktop h3{
+    font-size: 4vmin;
+}
+
+.platforms .desktop p{
+    font-size: 2vmin;
+    color: #000;
+}
+
+
+
+
+
+
+
+/* Testmonials */
+
+
+.testmonials h1{
+    font-size: 6vmin;
+    padding-top: 14vmin;
+}
+
+
+.testmonials .card-text{
+    padding: 0.5em;
+}
+
+.testmonials .card-body a{
+    font-size: 1.5em;
+}
+
+
+.testmonials .members{
+    padding: 10vmin 4vmin;
+}
+
+.testmonials .card{
+    max-width: 22rem;
+}
+
+.card-img-top img{
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+
+/* Footer */
+
+footer{
+    background: rgba(0, 0, 0, 0.8);
+    overflow-y: hidden;
+    padding: 10vmin 9vmin 20px;
+}
+
+footer input{
+    border: none !important;
+}
+
+footer input::placeholder{
+    color: #fff !important;
+}
+
+footer .input-group{
+    width: 90%;
+}
+
+footer .input-group-text{
+    background: var(--bggradient);
+    border: none;
+}
+
+footer .input-group-text i{
+    color: #495057;
+}
+
+footer i{
+    color: #dd2476;
+    margin: 5px;
+}
+
+
+
+
+
