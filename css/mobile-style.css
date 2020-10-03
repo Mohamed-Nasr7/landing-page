@@ -1,67 +1,66 @@
-@media(min-width:991px){
-    
-    .about .panel{
-        position: absolute;
-        top: 9%;
-        left: 40%;
-        background: white;
-        border-radius: 3px;
-        padding: 6vmin 6vmin;
-        box-shadow: 0 25px 42px rgba(0, 0, 0, 0.2);
-        font-family: var(--Rubik);
-        z-index: 1;
-    }
+@media (min-width: 991px) {
+  .about .panel {
+    position: absolute;
+    top: 9%;
+    left: 40%;
+    background: white;
+    border-radius: 3px;
+    padding: 6vmin 6vmin;
+    box-shadow: 0 25px 42px rgba(0, 0, 0, 0.2);
+    font-family: var(--Rubik);
+    z-index: 1;
+  }
 }
 
+@media (max-width: 768px) {
+  .numbers .rect {
+    width: 12em;
+    height: 7em;
+  }
 
-@media(max-width: 768px){
-    .numbers .rect{
-        width: 12em;
-        height: 7em;
-    }
-    
-    .numbers .rect h1{
-        font-size: 2em;
-    }
+  .numbers .rect h1 {
+    font-size: 2em;
+  }
 
-    .platforms .desktop i{
-        font-size: 8vmin;
-    }
-    
-    .hbody{
-        margin-top: 20vmin;
-    }
+  .platforms .desktop i {
+    font-size: 8vmin;
+  }
 
+  .hbody {
+    margin-top: 160px;
+  }
+
+  .header h1 {
+    font-size: 2.5em;
+  }
 }
 
+@media (max-width: 494px) {
+  .purchase p {
+    font-size: 4vmin;
+  }
 
-@media(max-width: 494px){
-    .purchase p{
-        font-size: 4vmin;
-    }
+  .cards .card-title {
+    font-size: 4.5vmin;
+  }
 
-    .cards .card-title{
-        font-size: 4.5vmin;
-    }
+  .cover .content h1 {
+    margin-top: 30px;
+  }
 
-    .cover .content h1{
-        margin-top: 30px;
-    }
+  .cover .content p {
+    font-size: 3.5vmin;
+  }
 
-    .cover .content p{
-        font-size: 3.5vmin;
-    }
+  .platforms p {
+    font-size: 3.5vmin;
+  }
 
-    .platforms p{
-        font-size: 3.5vmin;
-    }
-    
-    .platforms .desktop{
-        width: 45vmin;
-    }
+  .platforms .desktop {
+    width: 45vmin;
+  }
 
-    .platforms .desktop p{
-        font-size: 3vmin;
-    }
-
+  .platforms .desktop p {
+    font-size: 3vmin;
+  }
 }
